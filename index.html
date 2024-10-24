@@ -10,19 +10,73 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-  Improve your front-end skills by building projects
+    html, body {
+      background-color: hsl(212, 45%, 89%);
+      font-family: "Outfit", sans-serif;
+      margin: 0px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .card {
+      background: white;
+      width: 320px;
+      height: 499px;      
+      border-radius: 20px;
+      box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2);
+    }
 
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+    .text-box{
+      width: 288px;
+      height: 131px;
+      margin-top: 24px;
+      padding-left: 16px;
+      padding-right: 16px;
+      text-align: center;
+    }
+
+    .first-text{
+      font-size: 22px;
+      font-weight: 700;
+      color: hsl(218, 44%, 22%);
+      line-height: 120%;
+      margin: 0px;
+    }
+
+    .second-text{
+      font-size: 15px;
+      font-weight: 400;
+      color: hsl(216, 15%, 48%);
+      line-height: 140%;
+      letter-spacing: 0.2px;
+      margin-top: 16px;
+    }
+
+    .qr-code {
+      max-width: 288px;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+      margin: 16px auto;
+    }
+
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  </style>
+
+</head>
+
+<body>
+  <div class="card">
+    <img src="./images/image-qr-code.png" alt="qr code" class="qr-code">
+    <div class="text-box">
+      <h2 class="first-text">Improve your front-end skills by building projects</h2>
+      <p class="second-text">Scan the QR code to visit Frontend Mentor and take your coding skills <br> to the next level</p>
+    </div>  
   </div>
 </body>
+
 </html>
